@@ -1,13 +1,7 @@
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navber/Navbar";
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  Outlet,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Mainpage from "./Page/MainPage/Mainpage";
 import About from "./Page/About/about";
 import Services from "./Page/Services/Services";
