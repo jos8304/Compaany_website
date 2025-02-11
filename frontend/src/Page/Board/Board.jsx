@@ -13,7 +13,7 @@ const Board = () => {
   const [startDate, setStartDate] = React.useState("");
   const [endDate, setEndDate] = React.useState("");
   const [language, setLanguage] = React.useState(
-    localStorage.getItem("language") || "ko"
+    localStorage.getItem("language") || "en"
   );
 
   const navigate = useNavigate();
