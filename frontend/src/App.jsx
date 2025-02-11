@@ -3,10 +3,10 @@ import "./App.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import MainPage from "./Page/MainPage/Mainpage.jsx";
 import Leadership from "./Page/Leadership/Leadership.jsx";
-import About from "./Page/About/about.jsx";
+import About from "./Page/About/About.jsx";
 import Board from "./Page/Board/Board.jsx";
 import Services from "./Page/Services/Services.jsx";
-import Contact from "./Page/MainPage/Contact.jsx";
+import Contact from "./Page/Contact/Contact.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import NavBar from "./Components/Navber/Navbar.jsx";
 
