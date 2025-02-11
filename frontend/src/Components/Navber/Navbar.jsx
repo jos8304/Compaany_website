@@ -25,7 +25,7 @@ const MenuItem = ({ path, label, onClick }) => (
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("ko");
+  const [language, setLanguage] = useState("en");
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
