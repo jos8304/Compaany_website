@@ -5,12 +5,12 @@ import leadershipLocale from "../../Locale/Leadership.json";
 
 const Leadership = () => {
   const [language, setLanguage] = useState(
-    localStorage.getItem("language") || "ko"
+    localStorage.getItem("language") || "en"
   );
 
   useEffect(() => {
     const handleLanguageChange = () => {
-      setLanguage(localStorage.getItem("language") || "ko");
+      setLanguage(localStorage.getItem("language") || "en");
     };
 
     window.addEventListener("languageChange", handleLanguageChange);
