@@ -1,16 +1,17 @@
 import React from "react";
-import Hero from "./Hero";
-import Form from "./Form";
-import Contact from "./Contact";
 
-const Mainpage = () => {
+import Contact from "./Contact";
+import Hero from "./Hero";
+import Forum from "./Forum";
+
+const MainPage = () => {
   return (
-    <div className="py-32">
+    <div>
       <Hero />
-      <Form />
+      <Forum />
       <Contact />
     </div>
   );
 };
 
-export default Mainpage;
+export default MainPage;

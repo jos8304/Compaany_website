@@ -1,17 +1,19 @@
 import "./App.css";
-import Footer from "./Components/Footer/Footer";
-import Navbar from "./Components/Navber/Navbar";
+
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import Mainpage from "./Page/MainPage/Mainpage";
+import MainPage from "./Page/MainPage/Mainpage";
+import Leadership from "./Page/Leadership/Leadership";
 import About from "./Page/About/about";
+import Board from "./Page/Board/board";
 import Services from "./Page/Services/Services";
-import Contact from "./Page/Contact/Contact";
-import Teams from "./Page/Teams/Teams";
+import Contact from "./Page/MainPage/Contact";
+import Footer from "./Components/Footer/Footer";
+import NavBar from "./Components/Navber/Navbar";
 
 function Layout() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Outlet />
       <Footer />
     </>
@@ -25,19 +27,23 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Mainpage />,
+        element: <MainPage />,
       },
       {
         path: "/about",
         element: <About />,
       },
       {
-        path: "/services",
-        element: <Services />,
+        path: "/leadership",
+        element: <Leadership />,
       },
       {
-        path: "/team",
-        element: <Teams />,
+        path: "/board",
+        element: <Board />,
+      },
+      {
+        path: "/our-services",
+        element: <Services />,
       },
       {
         path: "/contact",

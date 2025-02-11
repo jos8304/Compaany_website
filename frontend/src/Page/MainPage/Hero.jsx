@@ -1,27 +1,25 @@
 import React from "react";
-import HeroImage from "../../assets/image.jpg";
+import HeroImage from "../../assets/Image1.jpg";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-[80vh] bg-gradient-to-b from-gray-50 to-white pb-0">
-      <div className="container mx-auto px-4 sm:px-6 lg:py-24">
+    <div className="relative min-h-[110vh] bg-gradient-to-b from-gray-50 to-white pb-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-36">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl 2xl:text-7xl font-bold text-gray-900 leading-tight mb-6 lg:mb-12">
-              Welcome to the <span className="text-blue-600">AI-Powered</span>{" "}
-              Job Portal
+              company
+              <span className="block text-blue-600 mt-2 lg:mt-6">company</span>
             </h1>
-
             <p className="text-lg sm:text-xl text-gray-800 text-semibold mb-8 max-w-2xl mx-auto">
-              We are a team of AI experts who are passionate about helping you
+              company
             </p>
-            <div className="flex flex-col gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button className="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-lg font-semibold shadow-lg hover:shadow-xl">
-                Apply Now
+                Request a consultation
               </button>
-
               <button className="px-8 py-4 bg-white text-blue-600 rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-colors duration-300 text-lg font-semibold">
-                Learn More
+                More
               </button>
             </div>
           </div>
@@ -38,20 +36,16 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           {[
-            { number: "AI Experts", label: "100+" },
-            { name: "Jobs Available", value: "100+" },
-            { name: "Location", value: "Remote" },
-            { name: "Salary", value: "100k - 200k" },
-            { name: "Working Hours", value: "Full Time" },
-            { name: "Education", value: "Bachelor's degree" },
-            { name: "Experience", value: "5+ years" },
-            { name: "Industry", value: "Tech" },
+            { number: "1,200+", label: "Completed installation" },
+            { number: "98%", label: "Customer satisfaction" },
+            { number: "15 years+", label: "Experienced in the industry" },
+            { number: "24/7", label: "24/7 support" },
           ].map((stat, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="text-2xl font-bold">{stat.number}</div>
-              <div className="text-lg text-gray-600">{stat.label}</div>
-              <div className="text-xl font-bold">{stat.value}</div>
-              <div className="text-gray-600 text-sm">{stat.name}</div>
+            <div key={index} className="text-center">
+              <div className="text-3xl font-bold text-blue-600">
+                {stat.number}
+              </div>
+              <div className="text-gray-900">{stat.label}</div>
             </div>
           ))}
         </div>
